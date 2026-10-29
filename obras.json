@@ -1,0 +1,92 @@
+[
+  {
+    "id": "01",
+    "imagem": "img/obra-01",
+    "nome": "Ana Beatriz",
+    "tipo": "Ensaio corporativo",
+    "ano": 2026,
+    "historia": "Ana pediu um retrato para a sala de reunião da empresa, no centro de Parnaíba. Queria o olhar de uma segunda-feira: calmo, direto, sem pressa de convencer ninguém. A luz ficou baixa e o silêncio fez o resto.",
+    "sala": "Corporativo"
+  },
+  {
+    "id": "02",
+    "imagem": "img/obra-02",
+    "nome": "Eduardo Lacerda",
+    "tipo": "Ensaio corporativo",
+    "ano": 2025,
+    "historia": "Eduardo ia assumir a diretoria e não queria a foto de crachá. O ensaio foi de manhã cedo, com a janela aberta para a rua. O retrato passou a abrir as reuniões no lugar do slide de sempre.",
+    "sala": "Corporativo"
+  },
+  {
+    "id": "03",
+    "imagem": "img/obra-03",
+    "nome": "Família Albuquerque",
+    "tipo": "Ensaio família",
+    "ano": 2024,
+    "historia": "Clara chegou com os filhos e um vestido que era da avó. Ninguém foi obrigado a sorrir. O retrato ficou com o jeito de domingo na casa deles, em Parnaíba, quando a pressa sai da sala.",
+    "sala": "Família"
+  },
+  {
+    "id": "04",
+    "imagem": "img/obra-04",
+    "nome": "Lívia Albuquerque",
+    "tipo": "Ensaio família",
+    "ano": 2024,
+    "historia": "Lívia, a caçula, pediu para ver o próprio rosto antes do clique. A cena nasceu no mesmo ensaio da família e ganhou parede só dela. É o retrato que os primos procuram primeiro.",
+    "sala": "Família"
+  },
+  {
+    "id": "05",
+    "imagem": "img/obra-05",
+    "nome": "Camila Duarte",
+    "tipo": "Ensaio casamento",
+    "ano": 2025,
+    "historia": "Camila escolheu o vestido branco e uma tarde sem relógio, dois dias antes da festa. Queria um retrato só seu, antes de dividir a parede com o Rafael. O chapéu entrou de brincadeira e ficou.",
+    "sala": "Casamento"
+  },
+  {
+    "id": "06",
+    "imagem": "img/obra-06",
+    "nome": "Rafael Duarte",
+    "tipo": "Ensaio casamento",
+    "ano": 2025,
+    "historia": "Rafael entrou no estúdio ainda ajeitando o paletó. Sentou, respirou e olhou para a câmera como quem já tinha decidido. Ao lado do retrato de Camila, o par fecha o casamento.",
+    "sala": "Casamento"
+  },
+  {
+    "id": "07",
+    "imagem": "img/obra-07",
+    "nome": "Isabela Fontes",
+    "tipo": "Ensaio 15 anos",
+    "ano": 2026,
+    "historia": "Isabela queria flores de verdade e um vestido em que desse para sentar. O ensaio de 15 anos virou o primeiro retrato grande da casa dos pais. Ela pediu para ficar na sala, não no corredor.",
+    "sala": "15 anos"
+  },
+  {
+    "id": "08",
+    "imagem": "img/obra-08",
+    "nome": "Larissa Pires",
+    "tipo": "Ensaio 15 anos",
+    "ano": 2025,
+    "historia": "Larissa chegou sem discurso pronto. A luz ficou baixa, o olhar ficou inteiro, e o retrato ganhou o corredor de casa. É a obra que ela mostra quando alguém pergunta como foi o ano.",
+    "sala": "15 anos"
+  },
+  {
+    "id": "09",
+    "imagem": "img/obra-09",
+    "nome": "Mariana Costa",
+    "tipo": "Ensaio gestante",
+    "ano": 2026,
+    "historia": "Mariana fotografou no sétimo mês, com as mãos no colo e a janela aberta. Pediu um retrato que ainda fizesse sentido quando a criança soubesse olhar. A espera ficou em branco e azul.",
+    "sala": "Gestante"
+  },
+  {
+    "id": "10",
+    "imagem": "img/obra-10",
+    "nome": "Beatriz Nogueira",
+    "tipo": "Ensaio gestante",
+    "ano": 2025,
+    "historia": "Beatriz escolheu um tecido dourado e uma pose de pé, de lado. O ensaio guarda a espera com a mesma calma de um retrato antigo. Ela diz que foi o dia em que a casa ficou mais quieta.",
+    "sala": "Gestante"
+  }
+]
