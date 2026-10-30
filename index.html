@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retrato de Sucesso — museu de retratos em Parnaíba</title>
+    <meta
+      name="description"
+      content="Demonstração do ateliê Retrato de Sucesso, em Parnaíba, Piauí. Um museu de retratos: role a tela e caminhe entre os salões."
+    />
+    <meta name="theme-color" content="#140c0e" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body data-pagina="entrada">
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+      <div class="marca-bloco">
+        <h1 class="marca"><a href="#entrada">Retrato de Sucesso</a></h1>
+        <p class="selo">Acervo de demonstração</p>
+      </div>
+      <button
+        class="menu-botao"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <span class="sr">Abrir menu</span>
+        <span class="hamb" aria-hidden="true"></span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Seções">
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#ensaios">Ensaios</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="entrada" id="entrada" aria-label="Entrada do museu">
+        <div class="cena" aria-hidden="true">
+          <div class="teto"><div class="claraboia"></div></div>
+          <div class="parede-esq"><i></i><i></i><i></i></div>
+          <div class="parede-dir"><i></i><i></i><i></i></div>
+          <div class="fundo"></div>
+          <div class="chao"></div>
+        </div>
+        <div class="entrada-conteudo">
+          <p class="local">Parnaíba · Piauí</p>
+          <p class="gancho">Cada retrato, uma obra.</p>
+          <p class="apoio">
+            Caminhe pelo salão. Cada ensaio é uma parede, cada pessoa uma moldura.
+          </p>
+          <a class="botao" href="#ensaios">Entrar na galeria</a>
+          <p class="dica">Role para caminhar pelo salão</p>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <p class="olho">O ateliê</p>
+        <h2>Um museu de memórias, em Parnaíba.</h2>
+        <p>
+          O Retrato de Sucesso trata cada ensaio como obra. Corporativo, família,
+          casamento, 15 anos e gestante — com hora marcada, luz macia e um retrato
+          que fica na parede.
+        </p>
+      </section>
+
+      <nav class="mapa" id="ensaios" aria-label="Salões da galeria">
+        <p class="olho olho-escuro">Planta do museu</p>
+        <h2>Escolha o salão da sua história</h2>
+        <ul>
+          <li>
+            <a href="#corporativo">
+              <span>Salão 01</span>
+              <strong>Corporativo</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#familia">
+              <span>Salão 02</span>
+              <strong>Família</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#casamento">
+              <span>Salão 03</span>
+              <strong>Casamento</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#quinze">
+              <span>Salão 04</span>
+              <strong>15 anos</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#gestante">
+              <span>Salão 05</span>
+              <strong>Gestante</strong>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="galeria">
+        <section class="sala" id="corporativo" data-sala="Corporativo">
+          <header class="sala-cabeca">
+            <p class="indice">Salão 01</p>
+            <h2>Corporativo</h2>
+            <p>Presença, olhar e o posto de quem conduz.</p>
+          </header>
+          <div class="parede" data-parede></div>
+          <div class="divisor" aria-hidden="true">
+            <div class="piso-wrap"><div class="piso"></div></div>
+            <div class="banco"><span class="banco-topo"></span><span class="banco-base"></span></div>
+          </div>
+        </section>
+
+        <section class="sala" id="familia" data-sala="Família">
+          <header class="sala-cabeca">
+            <p class="indice">Salão 02</p>
+            <h2>Família</h2>
+            <p>A casa inteira, num único silêncio bom.</p>
+          </header>
+          <div class="parede" data-parede></div>
+          <div class="divisor" aria-hidden="true">
+            <div class="piso-wrap"><div class="piso"></div></div>
+            <div class="banco"><span class="banco-topo"></span><span class="banco-base"></span></div>
+          </div>
+        </section>
+
+        <section class="sala" id="casamento" data-sala="Casamento">
+          <header class="sala-cabeca">
+            <p class="indice">Salão 03</p>
+            <h2>Casamento</h2>
+            <p>O dia em que duas histórias dividem a mesma parede.</p>
+          </header>
+          <div class="parede" data-parede></div>
+          <div class="divisor" aria-hidden="true">
+            <div class="piso-wrap"><div class="piso"></div></div>
+            <div class="banco"><span class="banco-topo"></span><span class="banco-base"></span></div>
+          </div>
+        </section>
+
+        <section class="sala" id="quinze" data-sala="15 anos">
+          <header class="sala-cabeca">
+            <p class="indice">Salão 04</p>
+            <h2>15 anos</h2>
+            <p>A primeira parede só sua.</p>
+          </header>
+          <div class="parede" data-parede></div>
+          <div class="divisor" aria-hidden="true">
+            <div class="piso-wrap"><div class="piso"></div></div>
+            <div class="banco"><span class="banco-topo"></span><span class="banco-base"></span></div>
+          </div>
+        </section>
+
+        <section class="sala" id="gestante" data-sala="Gestante">
+          <header class="sala-cabeca">
+            <p class="indice">Salão 05</p>
+            <h2>Gestante</h2>
+            <p>A espera, com a luz que ela merece.</p>
+          </header>
+          <div class="parede" data-parede></div>
+          <div class="divisor" aria-hidden="true">
+            <div class="piso-wrap"><div class="piso"></div></div>
+            <div class="banco"><span class="banco-topo"></span><span class="banco-base"></span></div>
+          </div>
+        </section>
+      </div>
+
+      <section class="fecho" id="contato">
+        <div class="moldura moldura-vazia" aria-hidden="true">
+          <div class="passe passe-vazio"></div>
+        </div>
+        <h2>Este quadro pode ser o seu.</h2>
+        <p>
+          Um ensaio em Parnaíba, com tempo e luz de museu. A conversa é direta,
+          humana e sem pressa.
+        </p>
+        <a class="botao" data-whatsapp href="#contato">Agendar ensaio no WhatsApp</a>
+        <p class="sussurro">ou fale direto comigo</p>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>Retrato de Sucesso · Parnaíba, Piauí</p>
+      <p>
+        Acervo de demonstração. Nomes, anos e histórias são fictícios. As imagens
+        são pinturas de domínio público e não retratam clientes do ateliê.
+      </p>
+      <p><a href="CREDITS.md">Créditos das imagens</a></p>
+    </footer>
+
+    <noscript>
+      <p class="aviso">
+        Para caminhar pela galeria, ative o JavaScript do navegador. As obras
+        ficam no arquivo obras.json.
+      </p>
+    </noscript>
+
+    <script src="js/galeria.js" defer></script>
+  </body>
+</html>
