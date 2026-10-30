@@ -32,6 +32,26 @@ Para trocar a foto, coloque um `.webp` e um `.jpg` com o mesmo nome em `img/` e 
 
 O número de WhatsApp fica no topo de `js/galeria.js`, na constante `WHATSAPP_NUMBER` (só dígitos, com DDI e DDD).
 
+## Caminhada pelos salões
+
+Com JavaScript e movimento liberado, a entrada é o corredor: a rolagem caminha, vira a câmera de frente para cada retrato e segue até a obra principal. Não há atalho de um salão para outro. O rótulo do salão e o “Obra N de M” só acompanham o percurso.
+
+Quem prefere movimento reduzido, ou quem está sem JavaScript, vê a galeria plana da primeira etapa.
+
+A velocidade está no topo de `js/corredor.js`. Os números são altura de rolagem (`svh`): quanto maior, mais longa e mais lenta é a etapa.
+
+| Constante | O que muda |
+| --- | --- |
+| `WALK_LEN` | Caminhada de uma obra até a próxima |
+| `TURN_LEN` | Virada da câmera para a parede, e a volta |
+| `DWELL_LEN` | Pausa diante do retrato |
+| `TURN_ANGLE` | Ângulo da virada, em graus (88 deixa o quadro quase de frente) |
+| `FINAL_WALK` | Última caminhada até a obra principal |
+| `FINAL_HOLD` | Pausa final |
+| `OBRAS_POR_SALAO` | Máximo de obras de cada salão na caminhada |
+
+`OBRAS_POR_SALAO` vale 3. Entram as primeiras obras daquele salão em `obras.json`. Para alongar ou encurtar o percurso, mude esse número. A galeria plana continua mostrando o arquivo inteiro. Hoje cada salão tem duas obras, então as dez entram na caminhada.
+
 ## Publicar
 
 O workflow em `.github/workflows/pages.yml` publica o site a partir da branch `main`. No GitHub, em **Settings → Pages → Build and deployment**, a origem precisa ser **GitHub Actions**. O endereço fica `https://<usuário>.github.io/museu-retrato-de-sucesso/`. Os caminhos do site são relativos para funcionar dentro dessa pasta.

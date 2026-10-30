@@ -8,9 +8,29 @@ document.addEventListener("DOMContentLoaded", () => {
   prepararMenu();
   prepararWhatsapp();
   const pagina = document.body.dataset.pagina;
-  if (pagina === "entrada") iniciarGaleria();
+  if (pagina === "entrada") void iniciarEntrada();
   if (pagina === "obra") iniciarObra();
 });
+
+async function iniciarEntrada() {
+  const reduzido = movimento.matches;
+  const pode =
+    !reduzido && window.gsap && window.ScrollTrigger && window.montarCorredor;
+  if (pode) {
+    try {
+      const obras = await carregarObras();
+      const ok = await window.montarCorredor(obras);
+      if (ok) return;
+    } catch (erro) {
+      /* a galeria plana cobre a falha */
+    }
+  }
+  document.documentElement.classList.remove("caminhada", "painel", "pronto", "is-portrait");
+  garantirGaleriaPlana();
+}
+
+window.prepararWhatsapp = prepararWhatsapp;
+window.garantirGaleriaPlana = garantirGaleriaPlana;
 
 function prepararMenu() {
   const botao = document.querySelector(".menu-botao");
@@ -52,15 +72,40 @@ function prepararWhatsapp() {
   });
 }
 
-async function carregarObras() {
-  const resposta = await fetch("obras.json");
-  if (!resposta.ok) throw new Error("obras");
-  const obras = await resposta.json();
-  if (!Array.isArray(obras)) throw new Error("formato");
-  return obras;
+let obrasPromessa = null;
+
+function carregarObras() {
+  if (!obrasPromessa) {
+    obrasPromessa = fetch("obras.json")
+      .then((resposta) => {
+        if (!resposta.ok) throw new Error("obras");
+        return resposta.json();
+      })
+      .then((obras) => {
+        if (!Array.isArray(obras)) throw new Error("formato");
+        return obras;
+      })
+      .catch((erro) => {
+        obrasPromessa = null;
+        throw erro;
+      });
+  }
+  return obrasPromessa;
 }
 
-async function iniciarGaleria() {
+let galeriaPromessa = null;
+
+function garantirGaleriaPlana() {
+  if (!galeriaPromessa) {
+    galeriaPromessa = montarGaleriaPlana().catch((erro) => {
+      galeriaPromessa = null;
+      throw erro;
+    });
+  }
+  return galeriaPromessa;
+}
+
+async function montarGaleriaPlana() {
   const paredes = document.querySelectorAll("[data-parede]");
   let obras;
   try {
@@ -143,7 +188,11 @@ function criarObra(obra) {
 
 function observarRevelacao() {
   const obras = document.querySelectorAll(".obra");
-  if (movimento.matches || !("IntersectionObserver" in window)) {
+  if (
+    movimento.matches ||
+    !("IntersectionObserver" in window) ||
+    document.documentElement.classList.contains("caminhada")
+  ) {
     obras.forEach((obra) => obra.classList.add("revelada"));
     return;
   }
