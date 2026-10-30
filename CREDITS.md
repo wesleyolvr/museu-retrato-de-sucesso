@@ -115,3 +115,19 @@ As imagens vêm do [The Met Open Access](https://www.metmuseum.org/about-the-met
 - Arquivo original: https://images.metmuseum.org/CRDImages/ep/original/DP169214.jpg
 - Crédito de aquisição: Bequest of William K. Vanderbilt, 1920
 - Licença da imagem: CC0 1.0
+
+## Parede do fundo
+
+A obra principal, no fim do corredor, não faz parte das dez fichas de `obras.json`. É o retrato que fecha a caminhada, com o convite “Quero meu retrato”.
+
+- Pintura: *Self-Portrait*
+- Artista: Henri Fantin-Latour
+- Data: cerca de 1858
+- Técnica: óleo sobre tela
+- Ficha: https://www.metmuseum.org/art/collection/search/436297
+- Arquivo original: https://images.metmuseum.org/CRDImages/ep/original/DT1979.jpg
+- Crédito de aquisição: Catharine Lorillard Wolfe Collection, Wolfe Fund, 1995
+- Licença da imagem: CC0 1.0
+- Arquivo no site: `img/finale.webp` (e `img/finale.jpg`)
+
+O piso do corredor (`img/piso-corredor.webp`) é uma textura geométrica repetida, feita para o protótipo. Não é obra do acervo.
